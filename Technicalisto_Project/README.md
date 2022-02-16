@@ -1,14 +1,30 @@
 
 # Technicalisto
 
-## How to create horizontal CollectionView inside TableViewCell
+## How to Take , Save and Display a .mp4 Video 
 
-1. Create your custom design as UITableView inside it add UITableViewCell inside it add your horizontal CollectionView.
 
-2. Connect your Big tableview delegate to your viewController and send data with custom cell & reload collectionView after connect.
+1. Add your design with view which video will display on it.
 
-3. in your custom TableViewCell add delegate of collectionView and send data to custom collectionViewCell.
+2. In info.plist Add This Privacy :
 
+    (1) Privacy - Camera Usage Description // For Take a video
+
+    (2) Privacy - Microphone Usage Description // For Record a video
+ 
+    (3) Privacy - Photo Library Additions Usage Description // For Save a video
+    
+3. Import :
+
+    MobileCoreServices
+    
+4. Inherit :
+
+    UIImagePickerControllerDelegate
+
+    UINavigationControllerDelegate
+
+5. Check Githup to review Code
 
 ### Thanks
 
